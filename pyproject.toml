@@ -1,0 +1,21 @@
+[project]
+name = "speed-game"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Akshad", email = "askaddive@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pandas>=3.1.0",
+    "pillow>=13.0.0",
+]
+
+[project.scripts]
+speed-game = "speed_game:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
